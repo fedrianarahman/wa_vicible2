@@ -8,27 +8,28 @@ import QrCode from './DashboardComponent/QrCode';
 import RegisterUser from './DashboardComponent/RegisterUser';
 import Outbox from './DashboardComponent/Outbox';
 const Dashboard = () => {
+
   return (
     <MainPanel>
-    <Container>
-      <Row>
-        <div className='col col-md-3'>
-            <Featured/>
-        <div className='mt-4'>
-            <WaMenu/>
-        </div>
-        <div className='mt-4'>
-            <QrCode/>
-        </div>
-        </div>
-        <div className='col col-md-9'>
-          <RegisterUser/>
-          <div className='outbox'>
-            <Outbox/>
+      <Container>
+        <Row>
+          <div className='col col-md-3'>
+            <Featured />
+            <div className='mt-4'>
+              <WaMenu />
+            </div>
+            <div className='mt-4'>
+              <QrCode />
+            </div>
           </div>
-        </div>
-      </Row>
-    </Container>
+          <div className='col col-md-9'>
+            <RegisterUser />
+            <div className='outbox'>
+              <Outbox />
+            </div>
+          </div>
+        </Row>
+      </Container>
     </MainPanel>
   )
 }
